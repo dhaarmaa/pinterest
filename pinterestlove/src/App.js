@@ -1,24 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
+import logoPinterest from './logoPinterest.png';
 import './App.css';
-
+import Buttons from './component';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <body> 
+        <div className= "navbar">
+        <nav className="nav">
+          <img src={logoPinterest} className="App-logo" alt="logo" />
+          <input class="input" type="search" placeholder="Buscar" aria-label="Search"></input>
+          <Buttons name='Inicio' btnClass= 'btnNav' />
+				  <Buttons name='Usuario' btnClass= 'btnNav' />
+
+
+        </nav>
+        </div>
+        </body> 
     </div>
   );
 }
