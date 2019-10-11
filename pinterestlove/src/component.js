@@ -7,7 +7,7 @@ class Buttons extends Component {
         return (
             <div>
        
-               <button href={ this.props.href } className = { this.props.btnClass } > { this.props.name } </button>
+               <button src={ this.props.src } className = { this.props.btnClass } > { this.props.name }  </button>
 
             </div>
         )
